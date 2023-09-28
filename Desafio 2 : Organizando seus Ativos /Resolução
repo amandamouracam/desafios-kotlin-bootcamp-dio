@@ -1,0 +1,16 @@
+fun main() {
+    val ativos = mutableListOf<String>()
+    val quantidadeAtivos = readLine()!!.toInt()
+
+    for (i in 1..quantidadeAtivos) {
+        val codigoAtivo = readLine()!!
+        ativos.add(codigoAtivo)
+    }
+
+    ativos.sort()
+
+    for (ativo in ativos){
+      println(ativo)
+    }
+      
+}

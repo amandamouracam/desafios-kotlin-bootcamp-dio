@@ -1,0 +1,13 @@
+fun main() {
+  var saldoTotal = readLine() !!.toInt()
+  val valorSaque = readLine() !!.toInt()
+
+  if(saldoTotal >= valorSaque){
+    
+    saldoTotal = saldoTotal - valorSaque
+    println("Saque realizado com sucesso. Novo saldo: $saldoTotal")
+    
+  } else{
+    println("Saldo insuficiente. Saque nao realizado!")
+  }
+}

@@ -1,0 +1,11 @@
+fun main() {
+    val saldoAtual = readLine()!!.toFloat()
+    val valorDeposito = readLine()!!.toFloat()
+    val valorRetirada = readLine()!!.toFloat()
+    
+    val deposito = saldoAtual+valorDeposito
+    val saldoFinal = deposito - valorRetirada
+
+    println("Saldo atualizado na conta: %.1f".format(saldoFinal))
+
+}
